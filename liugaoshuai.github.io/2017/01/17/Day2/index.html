@@ -1,0 +1,655 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="开始详细的html知识请参考w3school/html教程
+
+表单12345678910111213141516171819202122&amp;lt;form action=&quot;指定文件来处理提交表单&quot; method=&quot;HTTP方法&quot;&amp;gt;&amp;lt;!-- GET：少量数据 可见的 有容量限制 --&amp;gt;&amp;lt;!-- POST: 安全性更好 不可见的 --&amp;gt;&amp;lt;!-- 文本 --&amp;gt;&amp;l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Day 2 表单 - html5 - meta">
+<meta property="og:url" content="http://yoursite.com/2017/01/17/Day2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="开始详细的html知识请参考w3school/html教程
+
+表单12345678910111213141516171819202122&amp;lt;form action=&quot;指定文件来处理提交表单&quot; method=&quot;HTTP方法&quot;&amp;gt;&amp;lt;!-- GET：少量数据 可见的 有容量限制 --&amp;gt;&amp;lt;!-- POST: 安全性更好 不可见的 --&amp;gt;&amp;lt;!-- 文本 --&amp;gt;&amp;l">
+<meta property="og:updated_time" content="2017-01-22T09:17:18.549Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Day 2 表单 - html5 - meta">
+<meta name="twitter:description" content="开始详细的html知识请参考w3school/html教程
+
+表单12345678910111213141516171819202122&amp;lt;form action=&quot;指定文件来处理提交表单&quot; method=&quot;HTTP方法&quot;&amp;gt;&amp;lt;!-- GET：少量数据 可见的 有容量限制 --&amp;gt;&amp;lt;!-- POST: 安全性更好 不可见的 --&amp;gt;&amp;lt;!-- 文本 --&amp;gt;&amp;l">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/01/17/Day2/"/>
+
+
+
+
+
+  <title> Day 2 表单 - html5 - meta | Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle"></p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/17/Day2/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="好名字liu">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/header.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Hexo" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Day 2 表单 - html5 - meta
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-17T16:52:28+08:00">
+                2017-01-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h4><p>详细的html知识请参考<a href="http://www.w3school.com.cn/html/index.asp" target="_blank" rel="external">w3school/html教程</a></p>
+<hr>
+<h4 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"指定文件来处理提交表单"</span> <span class="attr">method</span>=<span class="string">"HTTP方法"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- GET：少量数据 可见的 有容量限制 --&gt;</span></div><div class="line"><span class="comment">&lt;!-- POST: 安全性更好 不可见的 --&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 文本 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 单选 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 多选 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 提交 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 密码 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 文本域 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">textarea</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 多选 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>one<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>two<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>three<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>type类型 readonly只读 disabled禁用 placeholder预期值</p>
+<p>readonly和disabled的区别是? 可以提交/不能提交</p>
+<p>有关于表单验证部分，一般情况用插件<a href="http://www.runoob.com/jquery/jquery-plugin-validate.html" target="_blank" rel="external">jQuery Validate菜鸟教程</a></p>
+<hr>
+<h4 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h4><p>面试官经常会问什么是html5?/html5有哪些新特性?/你接触过html5吗?</p>
+<blockquote>
+<p>HTML5的一些最有趣的新特性<br>HTML5新的语义元素，比如 <code>&lt;header&gt;</code> <code>&lt;footer&gt;</code> <code>&lt;article&gt;</code> <code>&lt;section&gt;</code><br>HTML5新的表单控件，比如数字、日期、时间、日历和滑块。<br>HTML5强大的图像支持，比如 <code>&lt;canvas&gt;</code>  <code>&lt;svg&gt;</code><br>HTML5强大的多媒体支持，比如 <code>&lt;video&gt;</code> <code>&lt;audio&gt;</code><br>HTML5强大的新 API，比如用本地存储取代cookie</p>
+</blockquote>
+<p><code>&lt;canvas&gt;</code>后面专门抽出一天深入学习再写出来</p>
+<p>贴一个sessionStorage 、localStorage 和 cookie 之间的区别</p>
+<blockquote>
+<ol>
+<li>cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下。</li>
+<li>存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</li>
+<li>数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。</li>
+<li>作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。</li>
+<li>Web Storage 支持事件通知机制，可以将数据更新的通知发送给监听者。</li>
+<li>Web Storage 的 api 接口使用更方便。</li>
+</ol>
+</blockquote>
+<hr>
+<h4 id="meta"><a href="#meta" class="headerlink" title="meta"></a>meta</h4><p>简单来说meta就是页面和浏览器沟通的桥梁，它告诉浏览器该用哪种方式解析网页</p>
+<p>定义针对搜索引擎和更新频度的描述和关键词</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"</span> <span class="attr">name</span>=<span class="string">"viewport"</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览</p>
+<p>width - viewport的宽度<br>height - viewport的高度<br>initial-scale - 初始的缩放比例<br>minimum-scale - 允许用户缩放到的最小比例<br>maximum-scale - 允许用户缩放到的最大比例<br>user-scalable - 用户是否可以手动缩放</p>
+<p>诸如此类还有一些ios系统对系统头部颜色的设定，设备对于手机号是否识别等</p>
+<p>ios和andriod对于很多html有不同的解析方式，为了照顾手机在不同设备，不同浏览器的样式统一，需要了解网页在不同内核之间的兼容性问题</p>
+<p><a href="http://www.cnblogs.com/vajoy/p/3735553.html" target="_blank" rel="external">主流浏览器内核介绍</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/16/Day1/" rel="next" title="Day 1 hexo搭建博客-45天的计划">
+                <i class="fa fa-chevron-left"></i> Day 1 hexo搭建博客-45天的计划
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/18/Day3/" rel="prev" title="Day 3 Node">
+                Day 3 Node <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/header.jpg"
+               alt="好名字liu" />
+          <p class="site-author-name" itemprop="name">好名字liu</p>
+          <p class="site-description motion-element" itemprop="description">Whatever is worth doing is worth doing well</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表单"><span class="nav-number">2.</span> <span class="nav-text">表单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML5"><span class="nav-number">3.</span> <span class="nav-text">HTML5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#meta"><span class="nav-number">4.</span> <span class="nav-text">meta</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">好名字liu</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
+      <!-- UY END -->
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
